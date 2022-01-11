@@ -1,6 +1,6 @@
 <template>
     <li class="header-bar">
-        <!-- <img :src='path' alt="" v-show="logo != ''"> -->
+        <!-- <img :src="require( `../../../assets/svg/${logo}.svg`)" alt="" v-show="logo != ''"> -->
         <a :href='link'>{{name}}</a>
     </li>
 </template>
@@ -8,16 +8,12 @@
 <script>
 export default {
     name:"HeaderComponent",
-    props:{
-        name:String,
-        logo:String,
-        link:String,
+    props: {
+        name: String,
+        logo: String,
+        link: String,
     },
-    data() {
-        return {
-            path: "../../assets/svg/" + this.logo,
-        }
-    }
+
 }
 </script>
 
@@ -36,6 +32,8 @@ export default {
         img {
             height: 10px;
             width: 10px;
+            // filter: invert(0);  
+            // color: white;
         }
     }
 </style>

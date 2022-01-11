@@ -9,13 +9,14 @@
                     Order Online
                 </div>
             </div>
-            <div class="first-bar">
+            <ul class="first-bar">
+                <!-- <img src= alt=""> -->
                 <HeaderComponent v-for='(el,index) in navBarFirst' :key='index'
-                    :name="el.name"
-                    :logo="el.logo"
-                    :link="el.link"
+                    :name= "el.name"
+                    :logo= "el.logo"
+                    :link= "el.link"
                 />
-            </div>
+            </ul>
         </div>
 
         <!-- logo  -->
@@ -25,20 +26,20 @@
 
         <!-- settore destra  -->
         <div class="sector">
-            <div class="first-bar">
+            <ul class="first-bar">
                 <HeaderComponent v-for='(el,index) in navBarSecond' :key='index'
-                    :name="el.name"
-                    :logo=" el.logo"
-                    :link="el.link"
+                    :name= "el.name"
+                    :logo= "el.logo"
+                    :link= "el.link"
                 />
-            </div>
-            <div class="first-bar">
+            </ul>
+            <ul class="first-bar">
                 <HeaderComponent v-for='(el,index) in navBarLast' :key='index'
-                    :name="el.name"
-                    :logo="el.logo"
-                    :link="el.link"
+                    :name= "el.name"
+                    :logo= "el.logo"
+                    :link= "el.link"
                 />
-            </div>
+            </ul>
         </div>
     </div>
     <Jumbotron/>
@@ -46,8 +47,8 @@
 </template>
 
 <script>
-import HeaderComponent from "../Sections/HeaderComponent.vue"
-import Jumbotron from "../Sections/Jumbotron.vue"
+import HeaderComponent from "../Sections/header/HeaderComponent.vue"
+import Jumbotron from "../Sections/header/Jumbotron.vue"
 export default {
     name:"Header",
     components: {
@@ -59,7 +60,7 @@ export default {
             navBarFirst: [
                 {
                     "name":"home",
-                    "logo": "svg-0.svg",
+                    "logo": "svg-0",
                     "link":"#"
                 },
                     {
@@ -93,7 +94,7 @@ export default {
             navBarLast: [
                   {
                     "name":"cart",
-                    "logo": "svg-1.svg",
+                    "logo": "svg-1",
                     "link":"#"
                 },
                     {
