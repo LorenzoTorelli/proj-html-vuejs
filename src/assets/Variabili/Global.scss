@@ -17,3 +17,44 @@ body {
     align-items: center;
     justify-content: space-around;
 }
+.column {
+    width: 15%;
+    position: relative;
+    height: 100%;
+    .next, .prev {
+        position: absolute;
+        // align-self: center;
+        width: 25px;
+        height: 50px;
+        top: 40%;
+        background-color: white;
+        cursor: pointer;
+
+    }
+    .next {
+        right: 0;
+        border-radius: 50px 0px 0px 50px;
+        p {
+            writing-mode: vertical-rl; 
+            margin-top:10px ;
+            margin-left: 3px;
+            color:#D2401E;
+        }
+    }
+    .prev {
+        border-radius: 0px 50px 50px 0px;
+        p {
+            // text-orientation: mixed;
+            writing-mode: vertical-rl; 
+            margin-top:10px ;
+            margin-left: 3px;
+            color:#D2401E;
+        }
+    }
+
+    .svg-pizza {
+        position: absolute;
+        top: 150px;
+        right: 10px
+    }
+}

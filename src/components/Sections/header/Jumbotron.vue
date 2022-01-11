@@ -29,17 +29,14 @@ export default {
                 {
                     front: "h3-rev-img-6",
                     back: "h3-rev-img-5",
-                    "num":1,
                 },
                 {
                     front: "h3-rev-img-4",
                     back:"h3-rev-img-3",
-                    "num":2,
                 },
                 {
                     front: "h3-rev-img-2",
                     back:"h3-rev-img-1",
-                    "num":3,
                 }
             ]
         }
@@ -86,40 +83,6 @@ export default {
             }
         }
 
-        .column {
-            width: 15%;
-            position: relative;
-            height: 100%;
-            .next, .prev {
-                position: absolute;
-                // align-self: center;
-                width: 25px;
-                height: 50px;
-                top: 40%;
-                background-color: white;
-                cursor: pointer;
-
-            }
-            .next {
-                right: 0;
-                border-radius: 50px 0px 0px 50px;
-                p {
-                    writing-mode: vertical-rl; 
-                    margin-top:10px ;
-                    margin-left: 3px;
-                    color:#D2401E;
-                }
-            }
-            .prev {
-                border-radius: 0px 50px 50px 0px;
-                p {
-                    // text-orientation: mixed;
-                    writing-mode: vertical-rl; 
-                    margin-top:10px ;
-                    margin-left: 3px;
-                    color:#D2401E;
-                }
-            }
-        }
+ 
     }
 </style>
