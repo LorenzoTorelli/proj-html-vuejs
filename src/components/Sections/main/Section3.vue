@@ -55,18 +55,15 @@ export default {
         .left-column{
             position: relative;       
             padding: 0;     
-
             .back {
                 width: 100%;
             }
-
             .front {
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%,-50%);
             }
-          
         }
         .right-column {
             padding: 0;
@@ -97,8 +94,6 @@ export default {
                     }
                 }
             }
-
-
         }
     }
 </style>

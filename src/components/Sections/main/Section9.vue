@@ -32,9 +32,8 @@ export default {
         background-image: url("../../../assets/Img/h3-background-img-3.jpg");
         padding: 80px 0px;
         margin-top: 10px;
-        .row>div  {
-            
 
+        .row>div  {   
             display: flex;
             justify-content: center;
             align-items: center;
