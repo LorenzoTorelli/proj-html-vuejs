@@ -21,9 +21,7 @@
         <div class="text">
             <h2>Go Ahead an build your own pizza we won't judge!</h2>
         </div>
-        <div class="svg-pizza">
-            <img src="../../../assets/svg/svg-4.svg" alt="">
-        </div>
+        
     </div>
 </template>
 
@@ -108,7 +106,8 @@ export default {
             position: absolute;
             width: 300px;
             top: 50%;
-            left:25%;
+            left:50%;
+            margin-left: 25px;
             transform: translate(-50%, -50%);
             h2 {
                 color: white;
@@ -116,14 +115,6 @@ export default {
                 font-size: 45px;
             }
         }
-        .svg-pizza {
-            position: absolute;
-            right: 1%;
-            bottom: 24%;
-            background-color: white;
-            padding: 5px 9px;
-            border-radius: 50%;
-        }
-
+        
     }
 </style>

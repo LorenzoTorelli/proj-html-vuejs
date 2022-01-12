@@ -31,7 +31,6 @@ import Section9 from "../Sections/main/Section9.vue"
 
 
 
-
 export default {
     name:"Main",
     components: {

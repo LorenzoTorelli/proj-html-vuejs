@@ -60,7 +60,7 @@ export default {
             navBarFirst: [
                 {
                     "name":"home",
-                    "logo": "svg-0",
+                    "logo": "svg-0.svg",
                     "link":"#"
                 },
                     {
@@ -94,7 +94,7 @@ export default {
             navBarLast: [
                   {
                     "name":"cart",
-                    "logo": "svg-1",
+                    "logo": "svg-1.svg",
                     "link":"#"
                 },
                     {
@@ -128,26 +128,23 @@ export default {
                 padding: 15px 20px;
                 text-transform: uppercase;
                 color: #FFFFFF;
+                cursor: pointer;
 
             }
             }
             .first-bar{
                 display: flex;
                 align-items: center;
-                // background-color: green;
             }
             .first-bar:nth-child(1) {
                 margin-left: -7px;
-                // background-color: red;
             }
         }
         
         .logo {
             width: 10%;
             padding: 10px 0px;
-            // background-color: red;
             img {
-                // height: 80px;
                 width: 100%;
                 object-fit: cover;
 

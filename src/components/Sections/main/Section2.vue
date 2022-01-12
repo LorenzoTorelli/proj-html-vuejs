@@ -7,12 +7,12 @@
             </div>
         </div>
         <div class="header-container central">
-            <h4>{{mainSlider[actual].first}}</h4>
+            <h4>" {{mainSlider[actual].first}} "</h4>
             <h5>{{mainSlider[actual].second}}</h5>
             <div class="point-container">
-                <div class="point" :class="actual == 0 ? 'point-colored' : ''"></div>
-                <div class="point" :class="actual == 1 ? 'point-colored' : ''"></div>
-                <div class="point" :class="actual == 2 ? 'point-colored' : ''"></div>
+                <div class="point" :class="actual == 0 ? 'point-colored' : ''" @click="actual = 0"></div>
+                <div class="point" :class="actual == 1 ? 'point-colored' : ''" @click="actual = 1"></div>
+                <div class="point" :class="actual == 2 ? 'point-colored' : ''" @click="actual = 2"></div>
 
             </div>
         </div>
@@ -20,9 +20,7 @@
             <div class="next" @click="nextImg()">
                 <p>next</p>
             </div>
-            <div class="svg-pizza">
-                <img src="../../../assets/svg/svg-4.svg" alt="">
-            </div>
+            
         </div>
     </div>
 </template>
@@ -83,13 +81,18 @@ export default {
             width: 50%;
 
             h4 {
-                font-size: 20px;
+                font-size: 25px;
                 text-align: center;
-                margin-bottom:50px ;
+                margin-bottom:30px ;
+                text-transform: uppercase;
+                font-weight: bold;
             }
 
             h5 {
-                color: red;
+                color: #d2401e;
+                font-size: 15px;
+                text-transform: uppercase;
+
             }
             .point-container {
                 display: flex;

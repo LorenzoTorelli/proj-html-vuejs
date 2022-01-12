@@ -67,8 +67,6 @@ export default {
     #jumbotron {
         height: 500px;
         width: 100%;
-        // background-image: url("../../assets/Img/h3-testimonials-bckgrnd.jpg");
-        // filter: 1;
         display: flex;
 
         .header-container {
@@ -77,8 +75,7 @@ export default {
 
             .front {
                 position: absolute;
-                // height: 100px;
-                width: 250px;
+                width: 20%;
                 // top: 0;
             }
         }

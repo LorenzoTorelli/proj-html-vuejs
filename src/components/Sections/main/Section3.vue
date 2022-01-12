@@ -1,43 +1,43 @@
 <template>
-    <div id="section-3">
-        <div class="left-column">
-            <!-- <img src="../../../assets/Img/h1-img-4.jpg" alt=""> -->
-            <img src="../../../assets/Img/h1-img-7n.png" alt="">
-        </div>
-        <div class="right-column">
-            <div class="text-container">
-                <h2>Specials*</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero officiis,</p>
-                <div class="riga">
-                    <div class="p-colonna">
-                        <h3>$10</h3>
-                    </div>
-                    <div class="s-colonna">
-                        <h3>Combo Piccolo</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe omnis, officia fugiat soluta perferendis itaque at voluptates dolores nesciunt cum vero, consectetu</p>
-                    </div>
-                </div>
-                <div class="riga">
-                    <div class="p-colonna">
-                        <h3>$10</h3>
-                    </div>
-                    <div class="s-colonna">
-                        <h3>Combo Piccolo</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe omnis, officia fugiat soluta perferendis itaque at voluptates dolores nesciunt cum vero, consectetu</p>
-                    </div>
-                </div>
-                <div class="riga">
-                    <div class="p-colonna">
-                        <h3>$10</h3>
-                    </div>
-                    <div class="s-colonna">
-                        <h3>Combo Piccolo</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe omnis, officia fugiat soluta perferendis itaque at voluptates dolores nesciunt cum vero, consectetu</p>
-                    </div>
-                </div>
+    <div id="section-3" class="container-fluid">
+        <div class="row">
+            <div class="left-column col-lg-6 col-md-12">
+                <img class='back' src="../../../assets/Img/h1-img-4.jpg" alt="">
+                <img class='front' src="../../../assets/Img/h1-img-7n.png" alt="">
             </div>
-            <div class="svg-pizza">
-                    <img src="../../../assets/svg/svg-4.svg" alt="">
+            <div class="right-column col-lg-6 col-md-12">
+                <div class="text-container">
+                    <h2>Specials*</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero officiis,</p>
+                    <div class="riga">
+                        <div class="p-colonna">
+                            <h3>$10</h3>
+                        </div>
+                        <div class="s-colonna">
+                            <h3>Combo Piccolo</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe omnis, officia fugiat soluta perferendis itaque at voluptates dolores nesciunt cum vero, consectetu</p>
+                        </div>
+                    </div>
+                    <div class="riga">
+                        <div class="p-colonna">
+                            <h3>$10</h3>
+                        </div>
+                        <div class="s-colonna">
+                            <h3>Combo Piccolo</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe omnis, officia fugiat soluta perferendis itaque at voluptates dolores nesciunt cum vero, consectetu</p>
+                        </div>
+                    </div>
+                    <div class="riga">
+                        <div class="p-colonna">
+                            <h3>$10</h3>
+                        </div>
+                        <div class="s-colonna">
+                            <h3>Combo Piccolo</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe omnis, officia fugiat soluta perferendis itaque at voluptates dolores nesciunt cum vero, consectetu</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
   </div>
@@ -52,19 +52,15 @@ export default {
 
 <style lang="scss" scoped>
     #section-3 {
-        display: flex;
-        
-
-        .left-column, .right-column {
-            width: 50%;
-        }
         .left-column{
-            position: relative;            
-            background-image: url("../../../assets/Img/h1-img-4.jpg");
-            background-repeat:no-repeat;
+            position: relative;       
+            padding: 0;     
 
-            img {
-                // width: 100%;
+            .back {
+                width: 100%;
+            }
+
+            .front {
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -73,16 +69,15 @@ export default {
           
         }
         .right-column {
-            // padding: 25px;
-            // background-color: blue;
-            position: relative;
+            padding: 0;
             display: flex;
             .text-container {
-                padding: 150px;
+                padding: 100px;
                 border-color: red;
-                width: 80%;
+                // width: 80%;
                 h3, h2 {
                     text-transform: uppercase;
+                    font-weight: bold;
                 }
                 p{
                     color: grey;
@@ -103,12 +98,7 @@ export default {
                 }
             }
 
-            .svg-pizza {
-                position: absolute;
-                bottom:250px;
-                right: 10px;
-                // background-color: blue;
-            }
+
         }
     }
 </style>

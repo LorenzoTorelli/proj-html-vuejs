@@ -30,8 +30,8 @@ export default {
             text-decoration: underline;
         }
         img {
-            height: 10px;
-            width: 10px;
+            height: 10%;
+            width: 10%;
             // filter: invert(0);  
             // color: white;
         }

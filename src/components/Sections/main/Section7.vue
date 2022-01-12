@@ -3,7 +3,7 @@
         <div class="pizza" v-for="(el, index) in pizzaType" :key="index">
             <img :src="require( `../../../assets/Img/${el.img}`)" alt="">
             <h4>{{el.name}}</h4>
-            <h4><span v-show="el.oldPrice != ''">{{el.oldPrice}} </span>{{el.price}}</h4>
+            <h5><span v-show="el.oldPrice != ''">{{el.oldPrice}} -</span> {{el.price}}</h5>
             <div class="sold" v-show="el.sold"><h5>sold</h5></div>
         </div>
     </div>
@@ -75,17 +75,37 @@ export default {
             // background-color: red;
             text-align: center;
             position: relative;
+            margin-bottom: 100px;
             img {
                 width: 200px;
             }
-        
+            h4 {
+                margin-top: 15px;
+                color:#B7903C;
+                text-transform: uppercase;
+            }
+            h5 {
+                color:#D2401E;
+                span{
+                    color: #D3CFAF;
+                    text-decoration: line-through;
+
+                }
+
+            }
+            &:hover {
+                background-color: lightgrey;
+                transition: 0.3s ease;
+                cursor: pointer;
+                border-radius: 25px;
+            }
             .sold {
                 position: absolute;
                 width: 40px;
                 height: 40px;
                 top: 5%;
                 right: 15%;
-                background-color: red;
+                background-color: #D2401E;
                 border-radius: 50%;
                 h5 {
                     margin-top: 30%;
