@@ -1,5 +1,5 @@
 <template>
-    <div id="section2" >
+    <div id="section-2" >
         <!-- <img src="../../../assets/svg/svg-6.svg" alt=""> -->
        <div class="column">
             <div class="prev" @click="prevImg()">
@@ -73,7 +73,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    #section2 {
+    #section-2 {
         margin: 150px 0px;
         display: flex;
 

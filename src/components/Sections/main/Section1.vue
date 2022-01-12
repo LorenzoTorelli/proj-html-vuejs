@@ -1,5 +1,5 @@
 <template>
-  <div id="section1">
+  <div id="section-1">
         <img src="../../../assets/Img/h3-img-1.jpg" alt="">
         <img src="../../../assets/Img/h3-img-2.jpg" alt="">
         <img src="../../../assets/Img/h3-img-3.jpg" alt="">
@@ -10,7 +10,7 @@
 
 <script>
 export default {
-    name:"Section1"
+    name:"Section-1"
 }
 </script>
 

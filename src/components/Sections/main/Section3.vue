@@ -1,7 +1,7 @@
 <template>
-    <div id="Section3">
+    <div id="section-3">
         <div class="left-column">
-            <img src="../../../assets/Img/h1-img-4.jpg" alt="">
+            <!-- <img src="../../../assets/Img/h1-img-4.jpg" alt=""> -->
             <img src="../../../assets/Img/h1-img-7n.png" alt="">
         </div>
         <div class="right-column">
@@ -38,7 +38,7 @@
             </div>
             <div class="svg-pizza">
                     <img src="../../../assets/svg/svg-4.svg" alt="">
-                </div>
+            </div>
         </div>
   </div>
 </template>
@@ -51,7 +51,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    #Section3 {
+    #section-3 {
         display: flex;
         
 
@@ -60,17 +60,17 @@ export default {
         }
         .left-column{
             position: relative;            
-            
+            background-image: url("../../../assets/Img/h1-img-4.jpg");
+            background-repeat:no-repeat;
+
             img {
-                width: 100%;
+                // width: 100%;
                 position: absolute;
-            }
-            img:nth-child(2) {
-                width: 50%;
-                top: 60%;
+                top: 50%;
                 left: 50%;
                 transform: translate(-50%,-50%);
-            } 
+            }
+          
         }
         .right-column {
             // padding: 25px;
