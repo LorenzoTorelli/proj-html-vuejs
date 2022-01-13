@@ -6,7 +6,6 @@
                     <img src="../../../assets/Img/mobile.png" alt="">
                 </div>
                 <div class="col-6 second" >
-      
                     <div class="hamb" @click="animationToggle = !animationToggle" :class="{change:animationToggle}">
                         <div class="bar1"></div>
                         <div class="bar2"></div>
@@ -16,21 +15,18 @@
                         <ul class="list">
                             <HeaderComponent v-for='(el,index) in data.navBarFirst' :key='index'
                             :name= "el.name"
-                            :logo= "el.logo"
                             :link= "el.link"
                         />
                         </ul>
                         <ul class="list">
                            <HeaderComponent v-for='(el,index) in data.navBarSecond' :key='index'
                             :name= "el.name"
-                            :logo= "el.logo"
                             :link= "el.link"
                         />
                         </ul>
                         <ul class="list">
                            <HeaderComponent v-for='(el,index) in data.navBarLast' :key='index'
                             :name= "el.name"
-                            :logo= "el.logo"
                             :link= "el.link"
                         />
                         </ul>

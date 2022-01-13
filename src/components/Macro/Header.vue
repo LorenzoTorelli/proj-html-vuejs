@@ -1,7 +1,6 @@
 <template>
   <div id="header">
-       
-        <HeaderSmart v-if="medium"/>
+        <HeaderSmart v-if="medium || actualW < 990"/>
         <HeaderDesktop v-else/>
         <Jumbotron/>
     </div>
@@ -21,10 +20,12 @@ export default {
     },
     data() {
         return {
-            medium: false
+            medium: false,
+            actualW: '',
         }
     },
     created() {
+        this.actualW = window.innerWidth;
          window.addEventListener("resize", () => {
              if(window.innerWidth < 990) {
                  this.medium= true;

@@ -46,7 +46,7 @@ export default {
 }
         }
         .container-bottom {
-            margin: 150px;
+            margin: 150px 0px;
             div {
                 // width: 50%;
                 margin: auto;

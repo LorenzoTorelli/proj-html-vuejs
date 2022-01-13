@@ -9,7 +9,10 @@
     <Section7/>
     <Section8/>
     <Section9/>
-    <div id="prova" @click="scroll()"></div>
+
+    <div id="Up" @click="scroll()">
+      <img src="../../assets/svg/svg-4.svg" alt="">
+    </div>
   </div>
 </template>
 
@@ -54,12 +57,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  #prova {
+  #Up {
     position: fixed;
-    bottom: 0;
-    right: 0;
-    height: 100px;
-    width: 100px;
-    background-color: blue;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
   }
 </style>

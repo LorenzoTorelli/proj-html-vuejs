@@ -5,9 +5,7 @@
             <div class="row">
                 <!-- settore sinistra  -->
                 <div class="sector-1 col-5">
-                    <div class="my-btn">
-                        Order Online
-                    </div>
+                    <a href="#section-9" class="my-btn">Order Online</a>
                     <ul class="first-bar">
                         <!-- <img src= alt=""> -->
                         <HeaderComponent v-for='(el,index) in data.navBarFirst' :key='index'
@@ -72,16 +70,14 @@ export default {
                 display: flex;
             }
         }
-
         .sector-1 {
-
             .my-btn {
-                background-color: #C83B1A;
-                padding: 15px 15px;
-                // padding-bottom: 0;
-                text-transform: uppercase;
-                color: white;
-                line-height: 1.5;
+                margin-top: -15px;
+            }
+        }
+        .sector-2 {
+            ul {
+                padding: 0;
             }
         }
         .logo {

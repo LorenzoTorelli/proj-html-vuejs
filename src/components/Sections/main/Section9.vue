@@ -1,22 +1,21 @@
 <template>
     <section id="section-9">
         <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="col-lg-2 col-md-4 col-sm-12 ">
-                    <input type="number" id="numeber" name="numer" min="1" placeholder="Number of person">
+            <div class="row Myform-container">
+                <div class="col-lg-2 col-md-4 col-sm-12 form-sing ">
+                    <input type="number" id="number" name="numer" min="1" placeholder="Number of person">
                     <h3>for</h3>
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-12">
+                <div class="col-lg-2 col-md-4 col-sm-12 form-sing">
                     <input type="date" id="date" name="date" placeholder="Date">
                     <h3>At</h3>
                 </div> 
-                <div class="col-lg-2 col-md-4 col-sm-12">
+                <div class="col-lg-2 col-md-4 col-sm-12 form-sing">
                     <input type="time" id="time" name="time" placeholder="Time">
-                    <div class="my-btn">book a table </div>
+                    <a class="my-btn">book a table </a>
                 </div>
             </div>
         </div>
-        <!-- <p>* Powered by OpenTable</p> -->
     </section>
 </template>
 
@@ -33,21 +32,21 @@ export default {
         padding: 80px 0px;
         margin-top: 10px;
 
-        .row>div  {   
-            display: flex;
+        .Myform-container {
             justify-content: center;
-            align-items: center;
-
-            input {
-                padding: 10px ;
-                margin: 0px 15px;
-                border: 2px solid black;
-            }
-            h3 { 
-                // align-self: center;
-                text-transform: uppercase;
-                font-size: 15px;
-                margin-left: 50px;
+            .form-sing  {   
+                display: flex;
+                input {
+                    padding: 10px ;
+                    margin: 0px 15px;
+                    border: 2px solid black;
+                }
+                h3 { 
+                    align-self: center;
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    margin-left: 50px;
+                }
             }
             
         }

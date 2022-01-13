@@ -76,15 +76,18 @@ export default {
         display: flex;
         align-items: center;
         padding: 25px 0px 50px;
+
         .central {
             position: relative;
-            
+            // transition: 1s;
+
             .back {
                 width: 80%;
             }
             .front {
                 position: absolute;
                 width: 20%;
+
             }
         }
        
