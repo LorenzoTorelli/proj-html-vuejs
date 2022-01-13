@@ -32,14 +32,19 @@
               <i class="fab fa-linkedin"></i>
             </div>
           </div>
+
+
           <div class="col-lg-4 col-md-12 third-col">
             <h3>The don peppe crew first and foremost values an authentic, well baked slice of pizza.</h3>
           </div>
 
 
         </div>
-        <div class="row">
 
+        <div class="row property">
+          <div class="col-12">
+            <h4>Created with Love by <span>Lorenzo Torelli</span></h4>
+          </div>
         </div>
       </div>
       <div class="col-lg-6 col-md-12 r-column">
@@ -106,9 +111,13 @@ export default {
 
 <style lang="scss" scoped>
     #Footer {
-
+        padding-left: 0;
+      .row {
+        padding: 0;
+      }
       .r-column{
         padding: 0;
+
 
         img {
           width: 100%;
@@ -158,9 +167,20 @@ export default {
           
         }
 
-         .third-col>h3{
-             color: white;
-           }
+        .third-col>h3{
+            color: white;
+          }
+        
+        .property {
+          h4 {
+            color: #B7903C;
+            margin-top: 50px;
+            font-size: 10px;
+            span {
+              color:#Ab4027;
+            }
+          }
+        }
       }
     }
 </style>

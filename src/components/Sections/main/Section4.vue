@@ -1,5 +1,5 @@
 <template>
-    <div id="section-4">
+    <section id="section-4">
         <div class="riga-1">
             <div class="col-1"></div>
             <div class="col-2"></div>
@@ -22,7 +22,7 @@
             <h2>Go Ahead an build your own pizza we won't judge!</h2>
         </div>
         
-    </div>
+    </section>
 </template>
 
 <script>

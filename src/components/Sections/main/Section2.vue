@@ -1,28 +1,31 @@
 <template>
-    <div id="section-2" >
+    <section id="section-2" >
         <!-- <img src="../../../assets/svg/svg-6.svg" alt=""> -->
-       <div class="column">
-            <div class="prev" @click="prevImg()">
-                <p>prev</p>
-            </div>
-        </div>
-        <div class="header-container central">
-            <h4>" {{mainSlider[actual].first}} "</h4>
-            <h5>{{mainSlider[actual].second}}</h5>
-            <div class="point-container">
-                <div class="point" :class="actual == 0 ? 'point-colored' : ''" @click="actual = 0"></div>
-                <div class="point" :class="actual == 1 ? 'point-colored' : ''" @click="actual = 1"></div>
-                <div class="point" :class="actual == 2 ? 'point-colored' : ''" @click="actual = 2"></div>
-
-            </div>
-        </div>
-        <div class="column">
-            <div class="next" @click="nextImg()">
-                <p>next</p>
-            </div>
-            
-        </div>
-    </div>
+       <div class="container-fluid">
+           <div class="row">
+               <div class="column-1 col-2">
+                    <div class="prev" @click="prevImg()">
+                        <p>prev</p>
+                    </div>
+                </div>
+                <div class="central  col-8">
+                    <h4>" {{mainSlider[actual].first}} "</h4>
+                    <h5>{{mainSlider[actual].second}}</h5>
+                    <div class="point-container">
+                        <div class="point" :class="actual == 0 ? 'point-colored' : ''" @click="actual = 0"></div>
+                        <div class="point" :class="actual == 1 ? 'point-colored' : ''" @click="actual = 1"></div>
+                        <div class="point" :class="actual == 2 ? 'point-colored' : ''" @click="actual = 2"></div>
+                    </div>
+                </div>
+                <div class="column-2 col-2">
+                    <div class="next" @click="nextImg()">
+                        <p>next</p>
+                    </div>
+           
+                </div>
+           </div>
+       </div>
+    </section>
 </template>
 
 <script>
@@ -73,12 +76,9 @@ export default {
 <style lang="scss" scoped>
     #section-2 {
         margin: 150px 0px;
-        display: flex;
+        // display: flex;
 
-        .central {
-            display: flex;
-            flex-direction: column;
-            width: 50%;
+        
 
             h4 {
                 font-size: 25px;
@@ -103,11 +103,11 @@ export default {
                     margin: 5px;
                     border-radius: 50%;
                     background-color: lightgray;
-}
+                }
                 .point-colored {
                     background-color: #B7903C;
                 }
             }
-        }
+        
     }
 </style>

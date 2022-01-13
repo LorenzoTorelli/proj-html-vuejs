@@ -1,46 +1,48 @@
 <template>
-    <div id="section-3" class="container-fluid">
-        <div class="row">
-            <div class="left-column col-lg-6 col-md-12">
-                <img class='back' src="../../../assets/Img/h1-img-4.jpg" alt="">
-                <img class='front' src="../../../assets/Img/h1-img-7n.png" alt="">
-            </div>
-            <div class="right-column col-lg-6 col-md-12">
-                <div class="text-container">
-                    <h2>Specials*</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero officiis,</p>
-                    <div class="riga">
-                        <div class="p-colonna">
-                            <h3>$10</h3>
-                        </div>
-                        <div class="s-colonna">
-                            <h3>Combo Piccolo</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe omnis, officia fugiat soluta perferendis itaque at voluptates dolores nesciunt cum vero, consectetu</p>
-                        </div>
-                    </div>
-                    <div class="riga">
-                        <div class="p-colonna">
-                            <h3>$10</h3>
-                        </div>
-                        <div class="s-colonna">
-                            <h3>Combo Piccolo</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe omnis, officia fugiat soluta perferendis itaque at voluptates dolores nesciunt cum vero, consectetu</p>
-                        </div>
-                    </div>
-                    <div class="riga">
-                        <div class="p-colonna">
-                            <h3>$10</h3>
-                        </div>
-                        <div class="s-colonna">
-                            <h3>Combo Piccolo</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe omnis, officia fugiat soluta perferendis itaque at voluptates dolores nesciunt cum vero, consectetu</p>
-                        </div>
-                    </div>
+    <section id="section-3" >
+        <div class="container-fluid">
+            <div class="row">
+                <div class="left-column col-lg-6 col-md-12">
+                    <img class='back' src="../../../assets/Img/h1-img-4.jpg" alt="">
+                    <img class='front' src="../../../assets/Img/h1-img-7n.png" alt="">
                 </div>
+                <div class="right-column col-lg-6 col-md-12">
+                    <div class="text-container">
+                        <h2>Specials*</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero officiis,</p>
+                        <div class="riga">
+                            <div class="p-colonna">
+                                <h3>$10</h3>
+                            </div>
+                            <div class="s-colonna">
+                                <h3>Combo Piccolo</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe omnis, officia fugiat soluta perferendis itaque at voluptates dolores nesciunt cum vero, consectetu</p>
+                            </div>
+                        </div>
+                        <div class="riga">
+                            <div class="p-colonna">
+                                <h3>$10</h3>
+                            </div>
+                            <div class="s-colonna">
+                                <h3>Combo Piccolo</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe omnis, officia fugiat soluta perferendis itaque at voluptates dolores nesciunt cum vero, consectetu</p>
+                            </div>
+                        </div>
+                        <div class="riga">
+                            <div class="p-colonna">
+                                <h3>$10</h3>
+                            </div>
+                            <div class="s-colonna">
+                                <h3>Combo Piccolo</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe omnis, officia fugiat soluta perferendis itaque at voluptates dolores nesciunt cum vero, consectetu</p>
+                            </div>
+                        </div>
+                    </div>
+        </div>
 
             </div>
         </div>
-  </div>
+    </section>
 </template>
 
 <script>

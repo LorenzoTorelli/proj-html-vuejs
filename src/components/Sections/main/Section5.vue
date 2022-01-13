@@ -1,5 +1,5 @@
 <template>
-    <div id="section-5">
+    <section id="section-5">
         <div class="card-container container-fluid">
             <div class="row">
                 <div class="card col-lg-3 col-md-6 col-sm-12" v-for='(el,index) in team' :key='index'>
@@ -15,15 +15,7 @@
             </div>
         </div>
 
-
-
-
-
-
-
-
-
-    </div>
+    </section>
 </template>
 
 <script>

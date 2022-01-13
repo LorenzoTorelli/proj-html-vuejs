@@ -1,12 +1,12 @@
 <template>
-    <div id="sezione-7">
+    <section id="section-7">
         <div class="pizza" v-for="(el, index) in pizzaType" :key="index">
             <img :src="require( `../../../assets/Img/${el.img}`)" alt="">
             <h4>{{el.name}}</h4>
             <h5><span v-show="el.oldPrice != ''">{{el.oldPrice}} -</span> {{el.price}}</h5>
             <div class="sold" v-show="el.sold"><h5>sold</h5></div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -65,7 +65,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    #sezione-7 {
+    #section-7 {
         display: grid;
         grid-template-columns: repeat(auto-fill,250px);
         grid-gap: 30px;

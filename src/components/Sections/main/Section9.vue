@@ -1,5 +1,5 @@
 <template>
-    <div id="sezione-9">
+    <section id="section-9">
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-lg-2 col-md-4 col-sm-12 ">
@@ -17,7 +17,7 @@
             </div>
         </div>
         <!-- <p>* Powered by OpenTable</p> -->
-    </div>
+    </section>
 </template>
 
 <script>
@@ -27,7 +27,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    #sezione-9 {
+    #section-9 {
         color: white;
         background-image: url("../../../assets/Img/h3-background-img-3.jpg");
         padding: 80px 0px;

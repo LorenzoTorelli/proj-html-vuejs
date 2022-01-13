@@ -1,49 +1,51 @@
 <template>
   <div id="header">
-    <div class="header-container">
+        <div class="header-container">
 
-        <!-- settore sinistra  -->
-        <div class="sector">
-            <div class="btn-container">
-                <div class="btn">
-                    Order Online
+            <!-- settore sinistra  -->
+            <div class="sector">
+                <div class="btn-container">
+                    <div class="btn">
+                        Order Online
+                    </div>
                 </div>
+                <ul class="first-bar">
+                    <!-- <img src= alt=""> -->
+                    <HeaderComponent v-for='(el,index) in navBarFirst' :key='index'
+                        :name= "el.name"
+                        :logo= "el.logo"
+                        :link= "el.link"
+                    />
+                </ul>
             </div>
-            <ul class="first-bar">
-                <!-- <img src= alt=""> -->
-                <HeaderComponent v-for='(el,index) in navBarFirst' :key='index'
-                    :name= "el.name"
-                    :logo= "el.logo"
-                    :link= "el.link"
-                />
-            </ul>
+
+            <!-- logo  -->
+            <div class="logo">
+                <img src="../../assets/Img/h5-logo-divided-header.png" alt="logo">
+            </div>
+
+            <!-- settore destra  -->
+            <div class="sector">
+                <ul class="first-bar">
+                    <HeaderComponent v-for='(el,index) in navBarSecond' :key='index'
+                        :name= "el.name"
+                        :logo= "el.logo"
+                        :link= "el.link"
+                    />
+                </ul>
+                <ul class="first-bar">
+                    <HeaderComponent v-for='(el,index) in navBarLast' :key='index'
+                        :name= "el.name"
+                        :logo= "el.logo"
+                        :link= "el.link"
+                    />
+                </ul>
+            </div>
         </div>
 
-        <!-- logo  -->
-        <div class="logo">
-            <img src="../../assets/Img/h5-logo-divided-header.png" alt="logo">
-        </div>
 
-        <!-- settore destra  -->
-        <div class="sector">
-            <ul class="first-bar">
-                <HeaderComponent v-for='(el,index) in navBarSecond' :key='index'
-                    :name= "el.name"
-                    :logo= "el.logo"
-                    :link= "el.link"
-                />
-            </ul>
-            <ul class="first-bar">
-                <HeaderComponent v-for='(el,index) in navBarLast' :key='index'
-                    :name= "el.name"
-                    :logo= "el.logo"
-                    :link= "el.link"
-                />
-            </ul>
-        </div>
+        <Jumbotron/>
     </div>
-    <Jumbotron/>
-  </div>
 </template>
 
 <script>

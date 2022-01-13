@@ -1,5 +1,5 @@
 <template>
-  <div id="section-1">
+  <section id="section-1">
         <div class="card-container container-fluid">
             <div class="row">
                 <div class="card col-lg-3 col-md-6 col-sm-12" v-for='(el,index) in img' :key='index'>
@@ -11,7 +11,7 @@
             </div>
         </div>
 
-  </div>
+  </section>
 </template>
 
 <script>

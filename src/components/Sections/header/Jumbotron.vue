@@ -1,17 +1,22 @@
 <template>
-    <div id="jumbotron">
-        <div class="column">
-            <div class="prev" @click="prevImg()">
-                <p>prev</p>
-            </div>
-        </div>
-        <div class="header-container">
-            <img class="front" :src="require( `../../../assets/Img/${this.jumbo[actual].front}.png`)" alt="">
-            <img class="back" :src="require( `../../../assets/Img/${this.jumbo[actual].back}.png`)" alt="">
-        </div>
-        <div class="column">
-            <div class="next" @click="nextImg()">
-                <p>next</p>
+    <div id="jumbotron" >
+
+        <div class="container-fluid">
+            <div class="row">
+               <div class="column-1 col-1">
+                    <div class="prev" @click="prevImg()">
+                        <p>prev</p>
+                    </div>
+                </div>
+                <div class="central col-10">
+                    <img class="front" :src="require( `../../../assets/Img/${this.jumbo[actual].front}.png`)" alt="">
+                    <img class="back" :src="require( `../../../assets/Img/${this.jumbo[actual].back}.png`)" alt="">
+                </div>
+                <div class="column-2 col-1">
+                    <div class="next" @click="nextImg()">
+                        <p>next</p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -65,20 +70,25 @@ export default {
 
 <style lang="scss" scoped>
     #jumbotron {
-        height: 500px;
-        width: 100%;
-        display: flex;
-
-        .header-container {
-            height: 100%;
+        // height: 450px;
+        // width: 100%;
+        padding: 50px 0px;
+      
+        .central {
             position: relative;
-
+            
+            .back {
+            width: 80%;
+            max-height: 450px;
+            }
             .front {
                 position: absolute;
                 width: 20%;
                 // top: 0;
             }
         }
+        
+        
 
  
     }

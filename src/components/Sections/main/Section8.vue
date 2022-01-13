@@ -1,50 +1,52 @@
 <template>
-    <div id="sezione-8" class="container-fluid">
-        <div class="row">
-            <div class="left-column col-lg-6 col-md-12 ">
-                <div class="title">
-                    <h5>Made with love</h5>
-                    <h2>Delish Pizza Deals</h2>
+    <section id="section-8">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="left-column col-lg-6 col-md-12 ">
+                    <div class="title">
+                        <h5>Made with love</h5>
+                        <h2>Delish Pizza Deals</h2>
+                    </div>
+                    <div class="riga">
+                        <div class="l-col">
+                            <h2>02</h2>
+                            <h3>NOV</h3>
+                        </div>
+                        <div class="r-col">
+                            <h3>Traditional Neapolitan pies in kyoto</h3>
+                            <h3>Pizza mercato</h3>
+                            <h5><span><i class="fas fa-map-marker-alt"></i></span> 204 E. Pizzetta Tommaso</h5>
+                        </div>
+                    </div>
+                    <div class="riga">
+                        <div class="l-col">
+                            <h2>02</h2>
+                            <h3>NOV</h3>
+                        </div>
+                        <div class="r-col">
+                            <h3>Traditional Neapolitan pies in kyoto</h3>
+                            <h3>Pizza mercato</h3>
+                            <h5><span><i class="fas fa-map-marker-alt"></i></span> 204 E. Pizzetta Tommaso</h5>
+                        </div>
+                    </div>
+                    <div class="riga">
+                        <div class="l-col">
+                            <h2>02</h2>
+                            <h3>NOV</h3>
+                        </div>
+                        <div class="r-col">
+                            <h3>Traditional Neapolitan pies in kyoto</h3>
+                            <h3>Pizza mercato</h3>
+                            <h5><span><i class="fas fa-map-marker-alt"></i></span> 204 E. Pizzetta Tommaso</h5>
+                        </div>
+                    </div>
                 </div>
-                <div class="riga">
-                    <div class="l-col">
-                        <h2>02</h2>
-                        <h3>NOV</h3>
-                    </div>
-                    <div class="r-col">
-                        <h3>Traditional Neapolitan pies in kyoto</h3>
-                        <h3>Pizza mercato</h3>
-                        <h5><span><i class="fas fa-map-marker-alt"></i></span> 204 E. Pizzetta Tommaso</h5>
-                    </div>
+                <div class="right-column col-lg-6 col-md-12">
+                    <img src="../../../assets/Img/h3-img-5a.jpg" alt="">
                 </div>
-                <div class="riga">
-                    <div class="l-col">
-                        <h2>02</h2>
-                        <h3>NOV</h3>
-                    </div>
-                    <div class="r-col">
-                        <h3>Traditional Neapolitan pies in kyoto</h3>
-                        <h3>Pizza mercato</h3>
-                        <h5><span><i class="fas fa-map-marker-alt"></i></span> 204 E. Pizzetta Tommaso</h5>
-                    </div>
-                </div>
-                <div class="riga">
-                    <div class="l-col">
-                        <h2>02</h2>
-                        <h3>NOV</h3>
-                    </div>
-                    <div class="r-col">
-                        <h3>Traditional Neapolitan pies in kyoto</h3>
-                        <h3>Pizza mercato</h3>
-                        <h5><span><i class="fas fa-map-marker-alt"></i></span> 204 E. Pizzetta Tommaso</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="right-column col-lg-6 col-md-12">
-                <img src="../../../assets/Img/h3-img-5a.jpg" alt="">
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -54,7 +56,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    #sezione-8 {
+    #section-8 {
         padding: 0;
 
         .right-column>img {
