@@ -10,10 +10,13 @@ body {
     font-family: 'Oswald', sans-serif;
 
 }
-.header-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.my-btn {
+    background-color: #C83B1A;
+    padding: 15px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+    line-height: 1.5;
 }
 .central {
     display: flex;
@@ -24,10 +27,11 @@ body {
 .column-1, .column-2 {
     padding: 0;
     display: flex;
+    align-items: center;
     .next, .prev {
         width: 25px;
         height: 50px;
-        align-self: center;
+        // align-self: center;
         background-color: white;
         cursor: pointer;
 
@@ -46,7 +50,6 @@ body {
             // margin-left: 3px;
             color:#D2401E;
         }
-        
     }
 
 }

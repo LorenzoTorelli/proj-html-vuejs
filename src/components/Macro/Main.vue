@@ -9,10 +9,7 @@
     <Section7/>
     <Section8/>
     <Section9/>
-
-
-
-
+    <div id="prova" @click="scroll()"></div>
   </div>
 </template>
 
@@ -43,16 +40,26 @@ export default {
       Section7,
       Section8,
       Section9,
-
-
-      
-
-    },
-
-   
+    }, 
+    methods: {
+      scroll() {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: 'smooth',
+        });
+      }
+    } 
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+  #prova {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+  }
 </style>

@@ -12,7 +12,7 @@
                 </div> 
                 <div class="col-lg-2 col-md-4 col-sm-12">
                     <input type="time" id="time" name="time" placeholder="Time">
-                    <div class="btn"> BOOK A TABLE</div>
+                    <div class="my-btn">book a table </div>
                 </div>
             </div>
         </div>
@@ -49,13 +49,7 @@ export default {
                 font-size: 15px;
                 margin-left: 50px;
             }
-            .btn {
-                padding: 10px;
-                background-color: #d2401e;
-                font-size: 15px;
-                margin-left: 20px;
-                color: white;
-            }
+            
         }
         p {
             font-size: 10px;

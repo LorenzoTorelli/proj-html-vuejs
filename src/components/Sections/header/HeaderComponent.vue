@@ -1,6 +1,6 @@
 <template>
     <li class="header-bar">
-        <!-- <img :src="require( `../../../assets/svg/${logo}.svg`)" alt="" v-show="logo != ''"> -->
+        <img :src="require( `../../../assets/svg/${logo}`)" alt="" v-if="logo">
         <a :href='link'>{{name}}</a>
     </li>
 </template>
@@ -19,6 +19,7 @@ export default {
 
 <style lang="scss" scoped>
     li {
+        display: flex;
         list-style: none;
         margin: 0px 10px;
         a {
@@ -30,10 +31,10 @@ export default {
             text-decoration: underline;
         }
         img {
-            height: 10%;
-            width: 10%;
-            // filter: invert(0);  
-            // color: white;
+            filter: invert(100%);
+            margin-right: 5px;
+            height: 20px;
+            width: 20px;
         }
     }
 </style>

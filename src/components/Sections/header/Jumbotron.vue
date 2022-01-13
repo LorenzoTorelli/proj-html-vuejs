@@ -70,24 +70,24 @@ export default {
 
 <style lang="scss" scoped>
     #jumbotron {
-        // height: 450px;
-        // width: 100%;
-        padding: 50px 0px;
-      
+        height: 40vw;
+        max-height: 600px;
+        min-height: 300px;
+        display: flex;
+        align-items: center;
+        padding: 25px 0px 50px;
         .central {
             position: relative;
             
             .back {
-            width: 80%;
-            max-height: 450px;
+                width: 80%;
             }
             .front {
                 position: absolute;
                 width: 20%;
-                // top: 0;
             }
         }
-        
+       
         
 
  
